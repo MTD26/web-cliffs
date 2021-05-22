@@ -1,7 +1,388 @@
-h1 {
-  color: blue;
+
+@import "colors";
+@import "sizes";
+@import "buttons";
+@import "iframes";
+@import "fontfamilies";
+
+/* --------------------------------------- HOME -------------------------------------*/
+
+/* LOGO */
+
+.navbar-brand img{
+  border-radius: 15px;
+  margin-left: 40px;
+  opacity: 1;
+  width:150px;
+  height:130px;
 }
 
-p{
-  font-size: 48px;
+/* Navbar */
+
+.navbar-nav{
+  margin-left: 50%;
 }
+
+.navbar-nav li{
+  padding: 20px;
+}
+
+/* Contenedor imagen principal y botón */
+
+.contiene_img {
+  width: 100%;
+  height: 500px;
+  padding-top: 0px;
+  background-image: URL("../images/fondo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;}
+
+.contiene_img h1{
+  font-size: 170px;
+  margin: 0px;
+  padding-top: 30px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+#contiene_boton {
+  margin: auto;
+  padding: auto;
+}
+
+#contiene_boton a{
+ display: inline-block;
+ width: 100%;
+ margin: auto;
+}
+
+#contiene_boton a button{
+  width: 100%;
+  height: 60px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+/* Carrousel */
+
+
+/* Las tres fotos del HOME con sus respectivos botones */
+
+.contiene_cliffs_container_fluid{
+  height: 500px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.contiene_cliffs_row{
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contiene_cliffs_row_element{
+  box-shadow: 5px 5px 3px rgba(196, 196, 196, 0.2);
+}
+
+.cliffs_1{
+  background-image: URL("../images/cliffs_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.cliffs_2{
+  background-image: URL("https://images.pexels.com/photos/1122413/pexels-photo-1122413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.cliffs_3{
+  /*background-image: URL("../images/cliffs_3.jpg");*/
+  background-image: URL("https://images.pexels.com/photos/982673/pexels-photo-982673.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+
+.contiene_cliffs_row_element{
+  padding: 0px;
+  margin: 10px;
+  display:flex;
+  justify-content:center ;
+  align-items: center;
+  padding-bottom: 10%;
+}
+
+.cliffs_boton{
+  color: white;
+  padding: 10px;
+  position: absolute;
+  width: 60%;
+  z-index: 2; 
+  background-color: black;
+}
+
+/* Iframe home */
+
+.contiene_iframe_home{
+ display: flex;
+ justify-content: center;
+}
+
+.iframe_home {
+  margin: auto;
+  width: 1120px;
+  height: 630px;
+  border-radius: 20px;
+   }
+
+
+/* --------------------------------------- HOSTEL -------------------------------------*/
+
+/* Imagen principal y título de HOSTEL */
+
+.contiene_img_hostel {
+  width: 100%;
+  height: 400px;
+  padding-top: 0px;
+  background-image: URL("../images/fondo2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;}
+
+  .contiene_img_hostel h1{
+  font-size: 170px;
+  margin: 0px;
+  padding-top: 30px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+/* boton hostel */
+
+#contiene_boton_hostel{
+  margin: auto;
+  padding: auto;
+}
+
+#contiene_boton_hostel a{
+ display: inline-block;
+ width: 100%;
+ margin: auto;
+}
+
+#contiene_boton_hostel a button{
+  margin-top: 150px;
+  width: 100%;
+  height: 60px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+/* Abajo de imagen principal hostel Contenido de la página Hostel */
+
+.hostel_cualidades_row{
+  display: flex;
+  justify-content: space-around;
+}
+
+.hostel_cualidades_row div{
+  overflow: hidden;
+}
+
+.hostel_cualidades_row div h3{
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.hostel_cualidades_row div img{
+  width: 100%;
+  height: 320px;
+  border-radius: 25px;
+}
+
+/* Abajo de el IFRAME DEL HOSTEL Contenido de la página Hostel */
+
+.contiene_imagen_hostel_abajo{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 85px;
+}
+
+/* ---------------- PRODUCTOS --------------------------------------------------*/
+
+.titulo_productos {
+  text-align: center;
+  font-size: 50px;
+  display: inline-block;
+}
+
+.filtros {
+  width: 13%;
+  float: left;
+  padding-top: 30px;
+  display: none;
+}
+
+.filtro_producto{
+  margin-top: 50px;
+}
+
+.productos {
+  width: 84.5%;
+  margin: 10px auto;
+}
+.buscador {
+  width: 100%;
+  height: auto;
+  margin: 30px auto;
+}
+.buscador input{
+  display: inline-block;
+}
+
+.buscador h2{
+  margin: 0px auto;
+  display: inline-block;
+}
+
+.titulo_categoria {
+  float: left;
+  padding-right: 80px;
+}
+.imagenes_productos{
+  width: 100%;
+  min-height: 500px;
+  margin-right: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;}
+
+.imagenes_productos div{
+  width: 33%;
+  height: 400px;
+  margin: 0px;
+  overflow: hidden;
+  padding-top: 2.5%;
+}
+
+.imagenes_productos div a img{
+  width: 90%;
+  height: 80%;}
+
+  .imagenes_productos div a div{
+  width: 80%;
+  height: 17.5%;
+  padding-top: 0px;
+  border-top: 3px solid black;
+  margin: auto;
+}
+
+.imagenes_productos div a div p{
+  padding: 0px;
+  margin: 0px;
+}
+
+.imagenes_productos div a div h4{
+  text-align: center;
+  margin: 15px auto 5px;
+  text-decoration: none;
+}
+
+.centrar_contenido_fila{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centrar_contenido_fila a:hover{
+  text-decoration: none;
+}
+
+/* ---------------- COMPANY ------------------ */
+
+#fondo_company{
+  height: 600px;
+  background-image: URL("../images/Fondo3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titulo_company{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo_company h1{
+  font-size: 150px;
+}
+
+.titulo_company p{
+  padding: 3%;
+  width: 50%;
+  background-color: rgba(237, 241, 242, 0.6);
+}
+
+.contenido_redes{
+  display: flex;
+  width: 50%;
+  margin: 15px auto;
+  
+}
+
+.contiene_img_redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contiene_img_redes img{
+  height: 60px;
+  width: 60px;
+}
+
+
+/* --------------- INICIO DE MEDIA QUERY ------------- */
+
+@media only screen and (max-width: 320px) {
+
+  .navbar img{
+    width: 120px;
+    height: 110px;
+    margin-left: 5%;
+  }
+
+  .contiene_img h1{
+  font-size: 100px;
+  }
+
+  #contiene_boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contiene_boton a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  #contiene_boton a button{
+  width: 70%;}
+
+  #contiene_boton a button h4{
+    font-size: 20px;
+  }
+  }
+
